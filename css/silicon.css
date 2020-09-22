@@ -1,0 +1,174 @@
+* {
+    font-family: Kufam, sans-serif;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    height: 10vh;
+    margin: 0 auto;
+    text-align: center;
+    border: solid #DB4437;
+    border-radius: 0.4rem;
+}
+
+nav a {
+    margin: 0.25rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 140%;
+    align-items: center;
+    vertical-align: middle;
+    border: solid#0F9D58;
+    border-radius: 0.5rem;
+    flex: 1;
+    color: black;
+    background-color: #F4B40099;
+    text-decoration: none;
+    font-family: Ranchers, sans-serif;
+
+}
+#home {
+    flex: 2;
+    font-size: 180%;
+}
+nav a:hover {
+    background-color: #F4B400;
+    cursor: pointer;
+}
+.wikiLink {
+    color: #4285F4;
+    text-decoration: none;
+}
+.wikiLink:hover {
+    color: #1b6bed;
+}
+/*------------nav design end-------------*/
+h1 {
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+    text-align: center;
+}
+/*-------------header end---------------*/
+
+/*------------main section start-------------*/
+h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+/*--------index-------*/
+#mainIndex {
+    text-align: center;
+    border: #999999 dotted 0.2rem;
+    height: 71vh;
+}
+.w1, .w2, .w3, .w4 {
+    width: 95%;
+    height: 33vh;
+    border-radius: 1rem;
+    margin: 0.2rem;
+}
+.w2 {
+    height: 35vh;
+}
+.w3 {
+    display: none;
+}
+.w4 {
+    display: none;
+}
+/*--------about-------*/
+#mainAbout {
+    text-align: left;
+    border: double #999999 0.2rem;
+    height: 71vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#mainAbout h2{
+    text-align: center;
+}
+/*--------map--------*/
+#mainMap {
+    height: 70vh;
+}
+#googleMap {
+    width: 95vw;
+    height: 70vh;
+    border-radius: 1rem;
+}
+/*--------video--------*/
+#mainVideo {
+    text-align: center;
+}
+.video {
+    width: 90vw;
+    height: 40vh;
+    margin-bottom: 1vh;
+}
+.videoLink {text-decoration: none;}
+.videoLink #a {color: #DB4437;}
+.videoLink #b {color: #F4B400;}
+.videoLink #c {color: #0F9D58;}
+.videoLink #d {color: #4285F4;}
+/*--------company--------*/
+.container {
+    position: relative;
+    top: 25vh;
+    background-color: #aaaaaa99;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+/*------------main section end-------------*/
+footer {
+    display: block;
+    position: absolute;
+    margin: 0;
+    width: 95vw;
+    bottom: 1vh;
+    text-align: center;
+    color: #777777;
+}
+
+/*------------responsive design start-------------*/
+@media screen and (min-width: 700px){
+    #mainIndex {
+        display: flex;
+        flex-wrap: wrap;
+        height: 70vh;
+    }
+    #mainIndex img {
+        flex: auto;
+        justify-content: center;
+        margin: 0.5vw;
+        width: 47vw;
+    }
+    .w3 {
+        display: inline-block;
+        width: 80vw;
+        height: 32vh;
+    }
+    .video {
+        width: 60vw;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 992px){
+    nav {
+        width: 50%;
+    }
+    img {
+        width: 31vw;
+    }
+    .w3, .w4 {
+        display: inline-block;
+    }
+    .w4 {
+        height: 32vh;
+    }
+    .video {
+        height: 60vh;
+    }
+}
